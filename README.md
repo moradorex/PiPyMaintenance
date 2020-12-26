@@ -11,7 +11,7 @@ The [config.yaml](config.yaml) file  is divided in three sections:
 
 More services can be added without modifying the script if "systemctl status" compatible, add the full name without the ".service" to the [config.yaml](config.yaml) service list.
 
-Tested in Raspbian 9 (stretch)
+Tested in Raspbian 9 (stretch) & Python3.7
 
 Steps:
 

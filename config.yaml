@@ -1,0 +1,14 @@
+# True to check and enable, False to no check
+services:
+  ufw: true
+  pihole-FTL: true
+  cloudflared: true
+  grafana-server: true
+  nginx: false
+
+# True to on, False to off 
+WiFi: false
+bluetooth: false
+
+#Time interval in seconds
+interval: 3600

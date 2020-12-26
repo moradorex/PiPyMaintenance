@@ -1,3 +1,17 @@
+Python script for systemctl services, WiFi and bluetooth maintenance for Raspberry Pi Raspbian systems
+
+The script checks in a user define interval the status of defined services, WiFi wlan0 and bluetooth and modifies them as defined in the config file, it also has a special implementation for ufw and Pi-Hole.
+
+It generates a output.log with information of changes and errors
+
+
+The [config.yaml](config.yaml) file  is divided in 3 section:
+- Services, list of services to be checked, True or False indicate if checked and enabled or not checked (only enable services if True, can't disable)
+- WiFi and bluetooth, True or False for enabling or disabling.
+- Interval, sets the time interval for the loop to repeat.
+
+Tested in Raspbian 9 (stretch)
+
 Steps:
 
 ```

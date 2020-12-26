@@ -4,11 +4,12 @@ The script checks in a user define interval the status of defined services, WiFi
 
 It generates a output.log with information of changes and errors
 
-
-The [config.yaml](config.yaml) file  is divided in 3 section:
+The [config.yaml](config.yaml) file  is divided in three sections:
 - Services, list of services to be checked, True or False indicate if checked and enabled or not checked (only enable services if True, can't disable)
 - WiFi and bluetooth, True or False for enabling or disabling.
 - Interval, sets the time interval for the loop to repeat.
+
+More services can be added without modifying the script if "systemctl status" compatible, add the full name without the ".service" to the [config.yaml](config.yaml) service list.
 
 Tested in Raspbian 9 (stretch)
 

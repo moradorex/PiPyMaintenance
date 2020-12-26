@@ -3,12 +3,9 @@ Description=Maintenance service
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python -u maintenance.py
-WorkingDirectory=/home/pi/PiPymaintenance
-StandardOutput=inherit
-StandardError=inherit
+ExecStart=/usr/bin/python3.7 maintenance.py &
+WorkingDirectory=/home/pi/maintenance
 Restart=always
-User=pi
 
 [Install]
 WantedBy=multi-user.target
